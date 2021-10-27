@@ -8,52 +8,51 @@ of an array
 #include <iomanip>
 using namespace std;
 
+const int SIZE = 10;
+
 int main() {
-	// Create an local array, a constant for array size
-	const int SIZE = 10;
+		
 	int listOfNUmber[SIZE];
 	
-	//prototype 2 function to find the smallest and largest value
-	void getValue(int &[], int);
-	int findLargest(int []);
-	int findSmallest(int []);
+	void getValue(int[], int);
+	int findLargest (const int[]);
+	int findSmallest(const int[]);
 	
-	// Let user enter value for array using control structure. We don't care about subcription
+	
 	getValue(listOfNUmber, SIZE);
 	
-	// find largest and smalles value
 	int smallest, largest;
 	smallest = findSmallest(listOfNUmber);
 	largest = findLargest(listOfNUmber);
 	
-	// display output
 	cout << endl;
 	cout << "The smallest number in the list is: " << smallest << endl;
 	cout << "The largest number in the list is: " << largest << endl;
 	
-	// terminate program
 	cout << "\nDone!\n";
 	return 0;
 }
 
-void getValue(int &array[], int SIZE) {
-	cout << "Enter 10 number and we will find the min and max.\n";
+void getValue(int array[], int SIZE) {
+	cout << "\nEnter 10 number and we will find the min and max.\n";
 	for (int count = 0; count < SIZE; count++ ) {
 		cout << "Enter number " << count + 1 << ": ";
 		cin >> array[count];
 	}
 }
 
-int findLargest(int array[]) {
+int findLargest(const int array[]) {
 	int largest = array[0];
-	for (int value : array) {
-		(largest < number ? largest = number : );
+	for (int count = 1; count < 10; count++) {
+		largest < array[count] ? largest = array[count] : largest = largest;
 	}
+	return (largest);
 }
 
-int findSmallest(int array[]) {
+int findSmallest(const int array[]) {
 	int smallest = array[0];
-	for (int value : array) {
-		(smallest > number ? smallest = number :);
+	for (int count = 1; count < 10; count++) {
+		smallest > array[count] ? smallest = array[count] : smallest = smallest;
 	}
+	return (smallest);
 }
