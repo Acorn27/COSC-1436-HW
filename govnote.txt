@@ -1,0 +1,9 @@
+1.only governoer can call special session for 30 days, can call as many special
+sessions as he want
+2.Tx governor don't have pocket veto power
+3.Line in item veto give gov power to shape legislation -> false, that is
+the power of THREAT TO VETO
+4.Tx is unique becuase it has two supreme court,... -> true
+5. There r 2 type of ciities, general law and home rule city
+
+

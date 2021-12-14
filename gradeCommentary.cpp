@@ -17,14 +17,14 @@ int main() {
 	int grade;
 
 	// prompt for user input
-	cout << "Enter your grade: ";
+	cout << "Enter your grade(-10 to 110): ";
 	cin >> grade;
-	
+
 	//display commentary
 	displayComment(grade);
-	
+
 	// notify and terminate program
-	cout << "DOne.\n";
+	cout << "Done.\n";
 	return 0;
 }
 
@@ -37,6 +37,6 @@ void displayComment(int grade) {
 	} else if (grade >= 70) {
 		cout << "You may need to visit Lab\n";
 	} else {
-		cout << "Done\n";
+		cout << "Please ask for help..\n";
 	}
 }

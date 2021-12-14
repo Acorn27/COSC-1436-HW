@@ -21,7 +21,7 @@ const string MY_CAR = "Toyota Camry";
 void parked(string);
 
 int main() {
-	
+
 	// display step 1
 	displayKey();
 	displayCar();
@@ -29,10 +29,10 @@ int main() {
 	displayMirror();
 	displayGPS();
 	displayDestination();
-	
+
 	// display step 2
 	parked(MY_CAR);
-	
+
 	// return 0
 	return 0;
 }
